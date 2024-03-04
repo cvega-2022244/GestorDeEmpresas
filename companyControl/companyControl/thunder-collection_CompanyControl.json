@@ -1,0 +1,369 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "CompanyControl",
+    "dateExported": "2024-03-04T02:53:48.734Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "d547faf4-6100-4841-b635-86c7df2a4431",
+            "name": "Public",
+            "containerId": "",
+            "created": "2024-03-04T01:45:02.152Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "13aee211-a247-4286-bf24-6a741c683552",
+            "name": "Admin",
+            "containerId": "",
+            "created": "2024-03-04T01:45:09.865Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "ba1224e4-3f15-454e-bc8b-03767a14bd41",
+            "name": "Category",
+            "containerId": "13aee211-a247-4286-bf24-6a741c683552",
+            "created": "2024-03-04T02:12:15.623Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "26602dd0-255e-4580-9053-9f1cc94b423f",
+            "name": "Company",
+            "containerId": "13aee211-a247-4286-bf24-6a741c683552",
+            "created": "2024-03-04T02:42:02.678Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "6c8a122b-e536-45ba-9bcc-c3bcd27d15cb",
+            "colId": "59232e8a-6fef-46df-84b7-314b9e74ed9e",
+            "containerId": "d547faf4-6100-4841-b635-86c7df2a4431",
+            "name": "register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T01:51:14.241Z",
+            "modified": "2024-03-04T01:53:56.329Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Brener"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Valladares"
+                    },
+                    {
+                        "name": "username",
+                        "value": "bvalladares"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "bvalladares@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "56478158"
+                    },
+                    {
+                        "name": "address",
+                        "value": "Ciudad de Guatemala"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "aae7115d-7303-4885-a5a0-018904b0ccc8",
+            "colId": "59232e8a-6fef-46df-84b7-314b9e74ed9e",
+            "containerId": "d547faf4-6100-4841-b635-86c7df2a4431",
+            "name": "login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-04T01:54:16.369Z",
+            "modified": "2024-03-04T01:59:21.027Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "jvega"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "jvega@gmail.com",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9d11ac2b-d7de-4e9d-8978-f8e1b5aa1bc3",
+            "colId": "59232e8a-6fef-46df-84b7-314b9e74ed9e",
+            "containerId": "ba1224e4-3f15-454e-bc8b-03767a14bd41",
+            "name": "create",
+            "url": "/category/create",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-04T02:12:20.903Z",
+            "modified": "2024-03-04T02:19:16.142Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1Mjk5MTkyMTEyZTk4MDJhNTA2NjgiLCJ1c2VybmFtZSI6Imp2ZWdhIiwiZW1haWwiOiJqdmVnYUBnbWFpbC5jb20iLCJuYW1lIjoiSmF2aWVyIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5NTE3NTYxLCJleHAiOjE3MDk1MjgzNjF9.OVEspccRK8NCJAL3jxwvKGfExDYtz9oWlA6pgMtWL_s"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "category",
+                        "value": "ARTE"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Se refiere a la expresión creativa y estética de ideas, emociones y experiencias a través de formas como la pintura, la escultura, la música, la danza, la literatura y el cine, entre otras"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "66e903be-0c56-4820-ac8e-92583a21aed2",
+            "colId": "59232e8a-6fef-46df-84b7-314b9e74ed9e",
+            "containerId": "ba1224e4-3f15-454e-bc8b-03767a14bd41",
+            "name": "list",
+            "url": "/category/list",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-04T02:19:43.161Z",
+            "modified": "2024-03-04T02:20:46.861Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1Mjk5MTkyMTEyZTk4MDJhNTA2NjgiLCJ1c2VybmFtZSI6Imp2ZWdhIiwiZW1haWwiOiJqdmVnYUBnbWFpbC5jb20iLCJuYW1lIjoiSmF2aWVyIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5NTE3NTYxLCJleHAiOjE3MDk1MjgzNjF9.OVEspccRK8NCJAL3jxwvKGfExDYtz9oWlA6pgMtWL_s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2e93a85f-a9da-4981-a39b-11009559ec58",
+            "colId": "59232e8a-6fef-46df-84b7-314b9e74ed9e",
+            "containerId": "ba1224e4-3f15-454e-bc8b-03767a14bd41",
+            "name": "update",
+            "url": "/category/update/65e52fa44e5a243f762eb1d2",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-04T02:23:00.379Z",
+            "modified": "2024-03-04T02:23:52.888Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1Mjk5MTkyMTEyZTk4MDJhNTA2NjgiLCJ1c2VybmFtZSI6Imp2ZWdhIiwiZW1haWwiOiJqdmVnYUBnbWFpbC5jb20iLCJuYW1lIjoiSmF2aWVyIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5NTE3NTYxLCJleHAiOjE3MDk1MjgzNjF9.OVEspccRK8NCJAL3jxwvKGfExDYtz9oWlA6pgMtWL_s"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "category",
+                        "value": "ARTES"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "02119b35-50b1-40fb-a79b-e7b7178335fa",
+            "colId": "59232e8a-6fef-46df-84b7-314b9e74ed9e",
+            "containerId": "ba1224e4-3f15-454e-bc8b-03767a14bd41",
+            "name": "delete",
+            "url": "/category/delete/65e531ba5edcd994ee77f2c0",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-04T02:24:20.212Z",
+            "modified": "2024-03-04T02:28:21.000Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1Mjk5MTkyMTEyZTk4MDJhNTA2NjgiLCJ1c2VybmFtZSI6Imp2ZWdhIiwiZW1haWwiOiJqdmVnYUBnbWFpbC5jb20iLCJuYW1lIjoiSmF2aWVyIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5NTE5MTg4LCJleHAiOjE3MDk1Mjk5ODh9.rsQvoYk09Xx92Hw5lv2dKZGjRENkQHfnj1tDe6bv_U8"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4ba8829b-0aa6-453b-9e58-b468d2105b32",
+            "colId": "59232e8a-6fef-46df-84b7-314b9e74ed9e",
+            "containerId": "26602dd0-255e-4580-9053-9f1cc94b423f",
+            "name": "create",
+            "url": "/company/create",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-04T02:42:22.005Z",
+            "modified": "2024-03-04T02:48:14.416Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1Mjk5MTkyMTEyZTk4MDJhNTA2NjgiLCJ1c2VybmFtZSI6Imp2ZWdhIiwiZW1haWwiOiJqdmVnYUBnbWFpbC5jb20iLCJuYW1lIjoiSmF2aWVyIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5NTE5MTg4LCJleHAiOjE3MDk1Mjk5ODh9.rsQvoYk09Xx92Hw5lv2dKZGjRENkQHfnj1tDe6bv_U8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "ArteViva Studio"
+                    },
+                    {
+                        "name": "description",
+                        "value": "ArteViva Studio es un estudio de arte multidisciplinario que ofrece clases, talleres y eventos culturales para promover la creatividad y la expresión artística en la comunidad"
+                    },
+                    {
+                        "name": "age",
+                        "value": "3"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e52fa44e5a243f762eb1d2"
+                    },
+                    {
+                        "name": "impact",
+                        "value": "MEDIO"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a2e1d5db-63e0-4c20-a3d9-d663010ca7b6",
+            "colId": "59232e8a-6fef-46df-84b7-314b9e74ed9e",
+            "containerId": "26602dd0-255e-4580-9053-9f1cc94b423f",
+            "name": "update",
+            "url": "/company/update/65e5366e72ff94b049be0757",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-03-04T02:42:27.501Z",
+            "modified": "2024-03-04T02:49:19.188Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1Mjk5MTkyMTEyZTk4MDJhNTA2NjgiLCJ1c2VybmFtZSI6Imp2ZWdhIiwiZW1haWwiOiJqdmVnYUBnbWFpbC5jb20iLCJuYW1lIjoiSmF2aWVyIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5NTE5MTg4LCJleHAiOjE3MDk1Mjk5ODh9.rsQvoYk09Xx92Hw5lv2dKZGjRENkQHfnj1tDe6bv_U8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "age",
+                        "value": "8"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b39df215-2f62-4b7e-b84f-bf2df1b4d246",
+            "colId": "59232e8a-6fef-46df-84b7-314b9e74ed9e",
+            "containerId": "26602dd0-255e-4580-9053-9f1cc94b423f",
+            "name": "listAZ",
+            "url": "/company/listAZ",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-04T02:42:50.550Z",
+            "modified": "2024-03-04T02:50:55.665Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1Mjk5MTkyMTEyZTk4MDJhNTA2NjgiLCJ1c2VybmFtZSI6Imp2ZWdhIiwiZW1haWwiOiJqdmVnYUBnbWFpbC5jb20iLCJuYW1lIjoiSmF2aWVyIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5NTE3NTYxLCJleHAiOjE3MDk1MjgzNjF9.OVEspccRK8NCJAL3jxwvKGfExDYtz9oWlA6pgMtWL_s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4c21badb-c586-4de4-be98-65e165d5b9a4",
+            "colId": "59232e8a-6fef-46df-84b7-314b9e74ed9e",
+            "containerId": "26602dd0-255e-4580-9053-9f1cc94b423f",
+            "name": "listZA",
+            "url": "/company/listZA",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-03-04T02:42:56.203Z",
+            "modified": "2024-03-04T02:51:04.555Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1Mjk5MTkyMTEyZTk4MDJhNTA2NjgiLCJ1c2VybmFtZSI6Imp2ZWdhIiwiZW1haWwiOiJqdmVnYUBnbWFpbC5jb20iLCJuYW1lIjoiSmF2aWVyIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5NTE3NTYxLCJleHAiOjE3MDk1MjgzNjF9.OVEspccRK8NCJAL3jxwvKGfExDYtz9oWlA6pgMtWL_s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e9c5250d-1874-4174-a541-1d09404aa971",
+            "colId": "59232e8a-6fef-46df-84b7-314b9e74ed9e",
+            "containerId": "26602dd0-255e-4580-9053-9f1cc94b423f",
+            "name": "listForAge",
+            "url": "/company/listAge",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-03-04T02:43:10.862Z",
+            "modified": "2024-03-04T02:51:27.559Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1Mjk5MTkyMTEyZTk4MDJhNTA2NjgiLCJ1c2VybmFtZSI6Imp2ZWdhIiwiZW1haWwiOiJqdmVnYUBnbWFpbC5jb20iLCJuYW1lIjoiSmF2aWVyIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA5NTE3NTYxLCJleHAiOjE3MDk1MjgzNjF9.OVEspccRK8NCJAL3jxwvKGfExDYtz9oWlA6pgMtWL_s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e53ac9c6-f520-4946-8a29-8729f149d881",
+            "colId": "59232e8a-6fef-46df-84b7-314b9e74ed9e",
+            "containerId": "26602dd0-255e-4580-9053-9f1cc94b423f",
+            "name": "report",
+            "url": "/company/report",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-03-04T02:43:16.778Z",
+            "modified": "2024-03-04T02:51:45.875Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
